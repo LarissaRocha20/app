@@ -59,7 +59,7 @@ public class FormCadastro extends javax.swing.JFrame {
         getContentPane().add(cad01);
         cad01.setBounds(340, 320, 130, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Email (1).png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cadas.png"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 930, 480);
 

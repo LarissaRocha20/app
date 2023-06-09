@@ -28,6 +28,7 @@ public class FormProp extends javax.swing.JFrame {
 
         estil = new javax.swing.JLabel();
         sair = new javax.swing.JLabel();
+        problem = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -49,7 +50,15 @@ public class FormProp extends javax.swing.JFrame {
         getContentPane().add(sair);
         sair.setBounds(600, 240, 80, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Email (2).png"))); // NOI18N
+        problem.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                problemMouseClicked(evt);
+            }
+        });
+        getContentPane().add(problem);
+        problem.setBounds(120, 240, 100, 50);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/des.png"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 850, 480);
 
@@ -66,6 +75,11 @@ public class FormProp extends javax.swing.JFrame {
         new FormFim().setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_sairMouseClicked
+
+    private void problemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_problemMouseClicked
+        new FormProb().setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_problemMouseClicked
 
     /**
      * @param args the command line arguments
@@ -105,6 +119,7 @@ public class FormProp extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel estil;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel problem;
     private javax.swing.JLabel sair;
     // End of variables declaration//GEN-END:variables
 }

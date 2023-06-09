@@ -120,7 +120,6 @@ public class FormI1 extends javax.swing.JFrame {
     private void romeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_romeMouseClicked
 
         new FormRoma().setVisible(true);
-        dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_romeMouseClicked
 
